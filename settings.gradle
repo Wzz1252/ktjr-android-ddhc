@@ -1,0 +1,3 @@
+include ':app-ddgz'
+include ':lib-core', ':lib-ui', 'lib-brvah'
+include ':mod-route', ':mod-login', ':mod-sales', ':mod-manager', ':mod-teammanager', ':mod-general'
