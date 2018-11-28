@@ -1,0 +1,45 @@
+ext {
+    // TODO 模块的配置
+    lib_core_vc = 100
+    lib_core_vn = "1.0.0"
+
+    lib_db_vc = 100
+    lib_db_vn = "1.0.0"
+
+    lib_route_vc = 100
+    lib_route_vn = "1.0.0"
+
+    lib_rss_vc = 100
+    lib_rss_vn = "1.0.0"
+
+    lib_ui_vc = 100
+    lib_ui_vn = "1.0.0"
+
+    mod_login_vc = 100
+    mod_login_vn = "1.0.0"
+
+    mod_rss_vc = 100
+    mod_rss_vn = "1.0.0"
+
+    // 项目配置
+    compile_sdk_version = 28
+    min_sdk_version = 15
+    target_sdk_version = 28
+
+    android_support_library = "28.0.0-rc01"
+
+    source_compatibility = JavaVersion.VERSION_1_8
+    target_compatibility = JavaVersion.VERSION_1_8
+
+    // 测试签名
+    debug_store_file = "./caidou.jks"
+    debug_store_password = "123456"
+    debug_key_alias = "singsound"
+    debug_key_password = "123456"
+
+    // 正式签名
+    release_store_file = "./caidou.jks"
+    release_store_password = "123456"
+    release_key_alias = "singsound"
+    release_key_password = "123456"
+}

@@ -19,3 +19,83 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+
+# TODO ARouter
+-keep public class com.alibaba.android.arouter.routes.**{*;}
+-keep public class com.alibaba.android.arouter.facade.**{*;}
+
+-keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
+# If you use the byType method to obtain Service, add the following rules to protect the interface:
+
+-keep interface * implements com.alibaba.android.arouter.facade.template.IProvider
+# If single-type injection is used, that is, no interface is defined to implement IProvider, the following rules need to be added to protect the implementation
+# -keep class * implements com.alibaba.android.arouter.facade.template.IProvider
+
+# TODO Retrofit
+# Retrofit does reflection on generic parameters. InnerClasses is required to use Signature and
+# EnclosingMethod is required to use InnerClasses.
+-keepattributes Signature, InnerClasses, EnclosingMethod
+
+# Retain service method parameters when optimizing.
+-keepclassmembers,allowshrinking,allowobfuscation interface * {
+    @retrofit2.http.* <methods>;
+}
+
+# Ignore annotation used for build tooling.
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+
+# Ignore JSR 305 annotations for embedding nullability information.
+-dontwarn javax.annotation.**
+
+# Guarded by a NoClassDefFoundError try/catch and only used when on the classpath.
+-dontwarn kotlin.Unit
+
+# Top-level functions that can only be used by Kotlin.
+-dontwarn retrofit2.-KotlinExtensions
+
+# TODO OkHttp
+-dontwarn com.squareup.okhttp.**
+-keep class com.squareup.okhttp.{*;}
+
+-dontwarn com.squareup.okhttp3.**
+-keep class com.squareup.okhttp3.** { *;}
+-dontwarn okio.**
+
+# TODO RxJava, RxAndroid
+-dontwarn sun.misc.**
+-keepclassmembers class rx.internal.util.unsafe.*ArrayQueue*Field* {
+    long producerIndex;
+    long consumerIndex;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueProducerNodeRef {
+    rx.internal.util.atomic.LinkedQueueNode producerNode;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueConsumerNodeRef {
+    rx.internal.util.atomic.LinkedQueueNode consumerNode;
+}
+-dontnote rx.internal.util.PlatformDependent
+
+# TODO Fresco
+-keep class com.facebook.**{*;}
+-dontwarn com.facebook.**
+-keep class com.facebook.fresco.** {*;}
+-keep interface com.facebook.fresco.** {*;}
+-keep enum com.facebook.fresco.** {*;}
+
+# TODO Gson
+-dontwarn com.google.**
+-keep class com.google.gson.** {*;}
+
+# TODO BaseRecyclerViewAdapterHelper
+-keep class com.chad.library.adapter.** {*;}
+-keep public class * extends com.chad.library.adapter.base.BaseQuickAdapter
+-keep public class * extends com.chad.library.adapter.base.BaseViewHolder
+-keepclassmembers  class **$** extends com.chad.library.adapter.base.BaseViewHolder {
+     <init>(...);
+}

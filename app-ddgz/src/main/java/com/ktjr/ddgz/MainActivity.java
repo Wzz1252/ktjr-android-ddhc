@@ -1,9 +1,10 @@
 package com.ktjr.ddgz;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.ktjr.ddgz.ktjr_android_ddhc.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
