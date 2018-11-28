@@ -1,6 +1,8 @@
 package com.ktjr.ddgz.eventbus.manage;
 
 import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.Iterator;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -111,7 +113,7 @@ public final class EventBusManager {
      *
      * @param event
      */
-//    @Subscribe
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(MessageEvent event) {
 //        LogUtils.debug(TAG, "dispacheing event: " + event.eventType);
         Iterator<SubscriberListener> iterator = mSubscriberListeners.iterator();

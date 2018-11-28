@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion rootProject.ext.compile_sdk_version
@@ -32,6 +33,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -53,4 +58,6 @@ dependencies {
     api "me.jessyan:autosize:1.0.1"
 
     api project(":lib-brvah")
+    implementation project(":lib-core")
+    implementation project(":mod-eventbus")
 }

@@ -1,4 +1,4 @@
-package com.torment.lib.core;
+package com.torment.lib.core.manage;
 
 import android.app.Activity;
 
