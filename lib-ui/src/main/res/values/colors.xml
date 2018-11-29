@@ -114,9 +114,12 @@
     <color name="app_color_t_red_btn_select">#d64542</color>
     <color name="app_color_t_red_btn_un_select">#b43936</color>
     <color name="app_color_t_red_btn_un_select_title">#ffffff</color>
+    <!-- EditText的背景颜色 -->
+    <color name="app_color_t_bg_edit_text">#f5f5f5</color>
     <!-- 分割线、分割模块的背景颜色 -->
     <color name="app_color_t_bg_line">#F9F9F9</color>
     <!-- App默认的背景颜色 -->
     <color name="app_color_t_bg_default">@color/app_color_t_bg_white</color>
     <color name="app_color_t_bg_white">#FFFFFF</color>
+
 </resources>

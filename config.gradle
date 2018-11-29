@@ -1,3 +1,6 @@
+// chmod 755 gradlew
+// ./gradlew clean
+
 ext {
     // TODO 模块的配置
     lib_core_vc = 100

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.torment.lib.ui.widget.appview.AppLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,16 +9,16 @@
 
     <include layout="@layout/include_toolbar" />
 
-    <androidx.core.widget.NestedScrollView
+    <com.torment.lib.ui.widget.appview.AppNestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <com.torment.lib.ui.widget.appview.AppLinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
+            <com.torment.lib.ui.widget.appview.AppLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#ffffff"
@@ -26,7 +26,7 @@
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp">
 
-                <LinearLayout
+                <com.torment.lib.ui.widget.appview.AppLinearLayout
                     android:id="@+id/add_customer"
                     android:layout_width="166dp"
                     android:layout_height="103dp"
@@ -35,17 +35,17 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <com.torment.lib.ui.widget.appview.AppImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="#ffffff" />
 
-                    <LinearLayout
+                    <com.torment.lib.ui.widget.appview.AppLinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <TextView
+                        <com.torment.lib.ui.widget.appview.AppTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
@@ -53,18 +53,18 @@
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
 
-                        <TextView
+                        <com.torment.lib.ui.widget.appview.AppTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:text=""
                             android:textColor="#ffffff"
                             android:textSize="12sp" />
-                    </LinearLayout>
+                    </com.torment.lib.ui.widget.appview.AppLinearLayout>
 
-                </LinearLayout>
+                </com.torment.lib.ui.widget.appview.AppLinearLayout>
 
-                <LinearLayout
+                <com.torment.lib.ui.widget.appview.AppLinearLayout
                     android:id="@+id/my_customer"
                     android:layout_width="166dp"
                     android:layout_height="103dp"
@@ -73,17 +73,17 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <com.torment.lib.ui.widget.appview.AppImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="#ffffff" />
 
-                    <LinearLayout
+                    <com.torment.lib.ui.widget.appview.AppLinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <TextView
+                        <com.torment.lib.ui.widget.appview.AppTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
@@ -91,16 +91,16 @@
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
 
-                        <TextView
+                        <com.torment.lib.ui.widget.appview.AppTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
                             android:text="(0)"
                             android:textColor="#ffffff"
                             android:textSize="12sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
+                    </com.torment.lib.ui.widget.appview.AppLinearLayout>
+                </com.torment.lib.ui.widget.appview.AppLinearLayout>
+            </com.torment.lib.ui.widget.appview.AppLinearLayout>
 
             <com.torment.lib.ui.widget.TitleView
                 android:layout_width="match_parent"
@@ -109,7 +109,7 @@
 
             <include layout="@layout/include_divider_view" />
 
-            <androidx.recyclerview.widget.RecyclerView
+            <com.torment.lib.ui.widget.appview.AppRecyclerView
                 android:id="@+id/results_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -124,56 +124,56 @@
 
             <include layout="@layout/include_divider_view" />
 
-            <LinearLayout
+            <com.torment.lib.ui.widget.appview.AppLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="#ffffff"
                 android:gravity="center">
 
-                <TextView
+                <com.torment.lib.ui.widget.appview.AppTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="sort" />
 
-                <View
+                <com.torment.lib.ui.widget.appview.AppView
                     android:layout_width="1dp"
                     android:layout_height="14dp"
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     android:background="@color/app_color_t_bg_line" />
 
-                <TextView
+                <com.torment.lib.ui.widget.appview.AppTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="followUpPerson" />
 
-                <View
+                <com.torment.lib.ui.widget.appview.AppView
                     android:layout_width="1dp"
                     android:layout_height="14dp"
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     android:background="@color/app_color_t_bg_line" />
 
-                <TextView
+                <com.torment.lib.ui.widget.appview.AppTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="ordered" />
 
-                <View
+                <com.torment.lib.ui.widget.appview.AppView
                     android:layout_width="1dp"
                     android:layout_height="14dp"
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     android:background="@color/app_color_t_bg_line" />
 
-                <TextView
+                <com.torment.lib.ui.widget.appview.AppTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="subscribed" />
-            </LinearLayout>
+            </com.torment.lib.ui.widget.appview.AppLinearLayout>
 
             <include layout="@layout/include_model_divider_view" />
 
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
-</LinearLayout>
+        </com.torment.lib.ui.widget.appview.AppLinearLayout>
+    </com.torment.lib.ui.widget.appview.AppNestedScrollView>
+</com.torment.lib.ui.widget.appview.AppLinearLayout>

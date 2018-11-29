@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.torment.lib.ui.widget.appview.AppLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,16 +9,31 @@
 
     <include layout="@layout/include_toolbar" />
 
-    <TextView
+    <com.torment.lib.ui.widget.appview.AppTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Hello World!" />
 
-    <Button
+    <com.torment.lib.ui.widget.appview.AppButton
         android:id="@+id/btn_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="测试" />
 
-</LinearLayout>
+    <com.torment.lib.ui.widget.appview.AppButton
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进入登录页" />
+
+    <com.torment.lib.ui.widget.StandardEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:hint="请输入测试内容"
+        app:is_clean="true"
+        app:left_icon="@drawable/view_title_label"
+        app:right_icon="@drawable/view_title_label" />
+
+</com.torment.lib.ui.widget.appview.AppLinearLayout>

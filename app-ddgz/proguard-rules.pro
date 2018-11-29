@@ -29,15 +29,13 @@
 # TODO ARouter
 -keep public class com.alibaba.android.arouter.routes.**{*;}
 -keep public class com.alibaba.android.arouter.facade.**{*;}
--dontwarn com.alibaba.android.arouter.**
--keep class com.alibaba.android.arouter.** {*;}
-
 -keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
-# If you use the byType method to obtain Service, add the following rules to protect the interface:
 
+# 如果使用了 byType 的方式获取 Service，需添加下面规则，保护接口
 -keep interface * implements com.alibaba.android.arouter.facade.template.IProvider
-# If single-type injection is used, that is, no interface is defined to implement IProvider, the following rules need to be added to protect the implementation
-# -keep class * implements com.alibaba.android.arouter.facade.template.IProvider
+
+# 如果使用了 单类注入，即不定义接口实现 IProvider，需添加下面规则，保护实现
+-keep class * implements com.alibaba.android.arouter.facade.template.IProvider
 
 # TODO Retrofit
 # Retrofit does reflection on generic parameters. InnerClasses is required to use Signature and

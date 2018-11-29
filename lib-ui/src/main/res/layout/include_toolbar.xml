@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.torment.lib.ui.widget.appview.AppLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/toolbar_layout"
     android:layout_width="match_parent"
@@ -18,8 +18,8 @@
         app:theme="@style/AppTheme.Light.Toolbar"
         app:titleTextAppearance="@style/AppTheme.Toolbar.TextAppearance" />
 
-    <View
+    <com.torment.lib.ui.widget.appview.AppView
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/app_color_t_bg_line" />
-</LinearLayout>
+</com.torment.lib.ui.widget.appview.AppLinearLayout>

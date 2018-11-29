@@ -8,7 +8,6 @@ import android.widget.Toast;
 import com.torment.lib.ui.entity.toast.ToastEntity;
 import com.torment.lib.ui.impl.IToastImpl;
 
-
 /**
  * Created by Torment on 2016/9/9.
  */

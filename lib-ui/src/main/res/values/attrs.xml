@@ -10,10 +10,11 @@
     </declare-styleable>
 
     <declare-styleable name="StandardEditView">
-        <attr name="title" />
-        <attr name="subtitle" />
+        <attr name="left_icon" format="reference" />
         <attr name="hint" />
-        <attr name="value" />
+        <attr name="text" />
+        <attr name="right_icon" format="reference" />
+        <attr name="is_clean" format="boolean" />
     </declare-styleable>
 
     <declare-styleable name="SexSelectView">

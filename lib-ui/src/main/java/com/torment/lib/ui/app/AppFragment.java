@@ -11,12 +11,8 @@ import com.torment.lib.ui.R;
 import com.torment.lib.ui.adapter.AppAdapter;
 import com.torment.lib.ui.cenum.AdapterStateEnum;
 
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
-
 import java.util.List;
 
-import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;

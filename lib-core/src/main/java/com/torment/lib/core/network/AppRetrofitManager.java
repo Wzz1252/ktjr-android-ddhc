@@ -22,7 +22,7 @@ public class AppRetrofitManager {
     private Retrofit mRetrofit;
     private OkHttpClient mOkHttpClient;
 
-    private AppRetrofitManager() {
+    protected AppRetrofitManager() {
     }
 
     public static AppRetrofitManager getInstance() {
