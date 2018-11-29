@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="title" format="string" />
+    <attr name="subtitle" format="string" />
+    <attr name="hint" format="string" />
+    <attr name="value" format="string" />
+
+    <declare-styleable name="TitleView">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="StandardEditView">
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="hint" />
+        <attr name="value" />
+    </declare-styleable>
+
+    <declare-styleable name="SexSelectView">
+        <attr name="type" format="boolean">
+            <enum name="edit" value="0" />
+            <enum name="select" value="1" />
+            <enum name="select_sex" value="2" />
+        </attr>
+        <attr name="sex" format="enum">
+            <enum name="MALE" value="1" />
+            <enum name="FEMALE" value="2" />
+        </attr>
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="hint" />
+        <attr name="value" />
+    </declare-styleable>
+
+    <declare-styleable name="StandardSelectView">
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="hint" />
+        <attr name="value" />
+    </declare-styleable>
+</resources>

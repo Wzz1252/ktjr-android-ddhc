@@ -2,6 +2,7 @@ package com.torment.lib.ui.app;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.ktjr.ddgz.eventbus.manage.EventBusManager;
 import com.torment.lib.core.manage.ActivityManager;
@@ -43,7 +44,26 @@ public abstract class AppActivity extends AppCompatActivity implements EventBusM
 
     protected abstract void setupViews(Bundle savedInstanceState);
 
-    protected Toolbar getToolbar(Toolbar toolbar, int menuResId, boolean isDisplayHomeAsUpEnabled) {
+//    protected Toolbar getToolbar(Toolbar toolbar, int menuResId, boolean isDisplayHomeAsUpEnabled) {
+//        if (toolbar == null) {
+//            throw new RuntimeException("Toolbar is null");
+//        }
+//        if (isDisplayHomeAsUpEnabled) {
+//            toolbar.setNavigationIcon(R.drawable.ic_navigation_back);
+//            toolbar.setNavigationOnClickListener(v -> finish());
+//        }
+//        if (menuResId > 0) {
+//            toolbar.inflateMenu(menuResId);
+//            toolbar.setOnMenuItemClickListener(AppActivity.this::onMenuItemClick);
+//        }
+//        return toolbar;
+//    }
+
+    protected Toolbar getToolbar(View toolbarLayout, int menuResId, boolean isDisplayHomeAsUpEnabled) {
+        if (toolbarLayout == null) {
+            throw new RuntimeException("ToolbarLayout is null");
+        }
+        Toolbar toolbar = toolbarLayout.findViewById(R.id.toolbar);
         if (toolbar == null) {
             throw new RuntimeException("Toolbar is null");
         }

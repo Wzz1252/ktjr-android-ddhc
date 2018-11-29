@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- 标准的颜色资源 -->
+<?xml version="1.0" encoding="utf-8"?><!-- 标准的颜色资源 -->
 <resources>
     <color name="color_000000_100">#FF000000</color>
     <color name="color_000000_95">#F2000000</color>
@@ -83,7 +82,6 @@
 
     <color name="debug_background">#4D99CCFF</color>
 
-    <!-- 应用背景的颜色 -->
     <color name="color_f7f7f7">#f7f7f7</color>
     <color name="color_f9f9f9">#f9f9f9</color>
     <color name="color_f0f0f0">#f0f0f0</color>
@@ -91,4 +89,34 @@
     <color name="color_f2f3f4">#f2f3f4</color>
     <color name="color_d8d8d8">#d8d8d8</color>
     <color name="color_e7e7e7">#e7e7e7</color>
+
+    <!-- 一元色 -->
+    <color name="app_color_t_primary">#FFFFFF</color>
+    <color name="app_color_t_primary_dark">#cccccc</color>
+    <!-- 二元色 -->
+    <color name="app_color_t_accent">#6B38FB</color>
+    <color name="app_color_t_accent_shallow">#a17fff</color>
+    <!-- Menu的文字颜色 -->
+    <color name="app_color_menu_text">#333333</color>
+    <!-- 文字展示的颜色 -->
+    <color name="app_color_t_text_primary">#666666</color>
+    <color name="app_color_t_text_default">#de000000</color>
+    <color name="app_color_t_text_title">#de000000</color>
+    <color name="app_color_t_text_subtitle">#99000000</color>
+    <color name="app_color_t_text_disabled">#61000000</color>
+    <!-- 文本的选中颜色 -->
+    <color name="app_color_t_select">#d64542</color>
+    <color name="app_color_t_select_text">#fefeff</color>
+    <!-- 文本的未选中颜色 -->
+    <color name="app_color_t_un_select">#f5f9fc</color>
+    <color name="app_color_t_un_select_text">#bdc2ca</color>
+    <!-- 红色按钮的选择样式 -->
+    <color name="app_color_t_red_btn_select">#d64542</color>
+    <color name="app_color_t_red_btn_un_select">#b43936</color>
+    <color name="app_color_t_red_btn_un_select_title">#ffffff</color>
+    <!-- 分割线、分割模块的背景颜色 -->
+    <color name="app_color_t_bg_line">#F9F9F9</color>
+    <!-- App默认的背景颜色 -->
+    <color name="app_color_t_bg_default">@color/app_color_t_bg_white</color>
+    <color name="app_color_t_bg_white">#FFFFFF</color>
 </resources>

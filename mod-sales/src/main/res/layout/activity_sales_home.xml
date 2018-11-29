@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/add_customer"
+                    android:layout_width="166dp"
+                    android:layout_height="103dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_sales_add_customer"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#ffffff" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="添加客户"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text=""
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_customer"
+                    android:layout_width="166dp"
+                    android:layout_height="103dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_sales_my_customer"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#ffffff" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="我的客户"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="(0)"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.torment.lib.ui.widget.TitleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="本月业绩" />
+
+            <include layout="@layout/include_divider_view" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/results_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff" />
+
+            <include layout="@layout/include_model_divider_view" />
+
+            <com.torment.lib.ui.widget.TitleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="本月排名" />
+
+            <include layout="@layout/include_divider_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="sort" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/app_color_t_bg_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="followUpPerson" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/app_color_t_bg_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="ordered" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/app_color_t_bg_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="subscribed" />
+            </LinearLayout>
+
+            <include layout="@layout/include_model_divider_view" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

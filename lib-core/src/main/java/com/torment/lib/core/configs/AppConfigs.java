@@ -6,12 +6,12 @@ public class AppConfigs {
 
     private boolean mDebug = false;
 
-    private AppConfigs() {
+    protected AppConfigs() {
     }
 
     public static void init() {
         AppConfigs appConfigs = getInstance();
-        appConfigs.setDebug(false);
+        appConfigs.setDebug(true);
     }
 
     public static AppConfigs getInstance() {

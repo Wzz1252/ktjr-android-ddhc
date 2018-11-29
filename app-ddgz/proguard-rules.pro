@@ -29,6 +29,8 @@
 # TODO ARouter
 -keep public class com.alibaba.android.arouter.routes.**{*;}
 -keep public class com.alibaba.android.arouter.facade.**{*;}
+-dontwarn com.alibaba.android.arouter.**
+-keep class com.alibaba.android.arouter.** {*;}
 
 -keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
 # If you use the byType method to obtain Service, add the following rules to protect the interface:
@@ -98,4 +100,16 @@
 -keep public class * extends com.chad.library.adapter.base.BaseViewHolder
 -keepclassmembers  class **$** extends com.chad.library.adapter.base.BaseViewHolder {
      <init>(...);
+}
+
+# TODO EventBus
+-keepattributes *Annotation*
+-keepclassmembers class ** {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+
+# Only required if you use AsyncExecutor
+-keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
+    <init>(java.lang.Throwable);
 }
