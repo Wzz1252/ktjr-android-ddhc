@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.Light.Splash.Background" parent="App.Base.Day.Theme">
+        <!--<item name="android:windowBackground">@drawable/splash_background</item>-->
+    </style>
+
 </resources>

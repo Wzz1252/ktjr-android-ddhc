@@ -1,4 +1,4 @@
-package com.ktjr.ddgz;
+package com.ktjr.ddgz.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
